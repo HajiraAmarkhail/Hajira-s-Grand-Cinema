@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hajira's Grand Cinema</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="image/favicon.ico" type="x-icon">
+
+
+</head>
+<body>
+
+  <main class="theater-container">
+    <h1 class="theater-name">Hajira's Grand Cinema 🎬</h1>
+    <p class="theater-tagline">A new adventure starts here!</p>
+    <h2 class="movie-title">Charlie and the Chocolate Factory</h2>
+
+    <video id="movie" controls autoplay loop class="movie-screen" poster="image/Charlie.jpeg" >
+      <source src="media/trailer.MP4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="bottom-buttons">
+        <button class="rate-btn">⭐ Rate</button>
+        <button class="play-again-btn" onclick="location.reload('movie')">🔄 Play Again</button>
+    </div>
+
+    <div class="rating-stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+
+    <div class="movie-info-container">
+      <div class="movie-info">
+        <div class="info-text">
+          <h2>🎬 Movie Title: Charlie and the Chocolate Factory</h2>
+          <p>A young boy wins a tour through the most magnificent chocolate factory in the world, led by the world's most unusual candy maker.</p>
+          <p>⭐ Rating: 6.7/10</p>
+          <p>⏰ Duration: 115 min</p>
+          <p>📅 Release Date: 2005-07-13</p>
+          <p>🎭 Genre: Adventure, Comedy, Family, Fantasy</p>
+        </div>
+        <div class="poster">
+          <img src="image/Charlie-and-the-Chocolate-Factory-(2005).jpeg" alt="Movie Poster" />
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
